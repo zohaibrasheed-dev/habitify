@@ -1,0 +1,9 @@
+.no-tasks {
+    padding: var(--space6);
+}
+.no-tasks h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #363636;
+}

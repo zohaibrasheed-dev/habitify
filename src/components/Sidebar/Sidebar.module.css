@@ -1,0 +1,26 @@
+.logo {
+    padding: var(--space5) 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: var(--space5);
+}
+.logo img {
+    max-width: 160px;
+}
+nav li a {
+    display: block;
+    font-size: 16px;
+    padding: var(--space5) var(--space7);
+}
+nav .active {
+    background: var(--active-bg);
+    position: relative;
+}
+nav .active::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    right: 0;
+    top: 0;
+    background: var(--color-orange);
+}

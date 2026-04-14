@@ -1,0 +1,4 @@
+header {
+    padding: var(--space4);
+    box-shadow: 10px 0 12px 3px rgba(0, 0, 0, 0.1);
+}

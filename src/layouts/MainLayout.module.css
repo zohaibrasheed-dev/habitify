@@ -1,0 +1,9 @@
+.layout {
+    display: grid;
+    height: 100vh;
+    background: #fff;
+    grid-template-columns: 300px 1fr;
+}
+.sidebar {
+    box-shadow: 0 10px 12px 3px rgba(0, 0, 0, 0.1);
+}
