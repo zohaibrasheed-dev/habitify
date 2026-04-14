@@ -1,4 +1,8 @@
 .modal {
+    opacity: 0;
+    transform: scale(0.95) translateY(15px);
+    transition: all 0.3s ease;
+    animation: fadeIn 0.4s ease forwards;
     position: absolute;
     top: 0;
     left: 0;
@@ -9,14 +13,25 @@
     align-items: center;
     justify-content: center;
 }
-.task-form {
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+.modal-content {
     width: 450px;
     background: #fff;
     padding: 35px;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
+}
+.task-form {
     gap: 14px;
+    display: flex;
+    flex-direction: column;
 }
 .field input {
     width: 100%;

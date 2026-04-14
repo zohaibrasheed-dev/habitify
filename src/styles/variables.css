@@ -1,5 +1,15 @@
 :root {
 
+    /*==== COLORS ====*/
+    --color-orange: #fd7c38;
+    --color-gray: #333;
+    --active-bg: #fff4ee;
+
+    /*==== TEXT ====*/
+    --h1: 42px;
+    --h2: 30px;
+    --h3: 26px;
+
     --space1: 4px;
     --space2: 8px;
     --space3: 12px;
@@ -8,8 +18,6 @@
     --space6: 26px;
     --space7: 34px;
     --space8: 45px;
-
-    --color-orange: #fd7c38;
-    --active-bg: #fff4ee;
+    
 }
 

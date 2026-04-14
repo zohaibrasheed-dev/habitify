@@ -1,5 +1,6 @@
 import styles from './MainLayout.module.css';
 import Sidebar from '../components/Sidebar/Sidebar';
+import Header from '../components/Header/Header';
 import Dashboard from '../pages/Dashboard/Dashboard';
 
 
@@ -12,7 +13,8 @@ function MainLayout() {
                 <aside className={styles.sidebar}>
                     <Sidebar />
                 </aside>
-                <div className="mainArea">
+                <div className={styles.mainArea}>
+                    <Header />
                     <Dashboard />
                 </div>
             </div>
