@@ -4,12 +4,14 @@
     --color-orange: #fd7c38;
     --color-gray: #333;
     --active-bg: #fff4ee;
+    --bg-offwhite: #f7f7f4;
 
     /*==== TEXT ====*/
     --h1: 42px;
     --h2: 30px;
     --h3: 26px;
     --h4: 20px;
+    --h5: 18px;
 
     --space1: 4px;
     --space2: 8px;

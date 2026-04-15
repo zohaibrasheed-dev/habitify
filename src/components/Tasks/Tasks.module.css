@@ -1,0 +1,36 @@
+.tasks-area {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 0 20px -5px rgba(0,0,0,0.4);
+}
+.tasks-header {
+    padding: var(--space4);
+    background: var(--color-orange);
+    color: #fff;
+}
+.tasks-body {
+    min-height: 300px;
+    position: relative;
+    padding: var(--space4);
+}
+.tasks-area ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.tasks-area ul li {
+    padding: var(--space3) var(--space5);
+    background: #eee;
+    border-radius: 6px;
+}
+.noTasks {
+    font-size: 18px;
+    display: block;
+    color: #333;
+    font-weight: 500;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

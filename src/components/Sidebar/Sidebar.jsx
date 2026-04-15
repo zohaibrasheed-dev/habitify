@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from '../../assets/icons/logo.png';
 import styles from './Sidebar.module.css';
 
@@ -10,12 +10,11 @@ const Sidebar = () => {
             </div>
             <nav>
                 <ul>
-                    <li><Link to="/" className={styles.active}>Dashboard</Link></li>
-                    <li><Link to="/about">About</Link></li>
+                    <li><NavLink to="/" className={ ({isActive}) => isActive ? styles.active : "" }>Dashboard</NavLink></li>
+                    <li><NavLink to="/about" className={ ({isActive}) => isActive ? styles.active : "" }>About</NavLink></li>
                 </ul>
             </nav>
         </>
     )
 }
-
 export default Sidebar

@@ -22,7 +22,9 @@ img {
     display: block;
     max-width: 100%;
 }
-
+input:focus {
+    outline: none;
+}
 
 .font-ibm {
     font-family: "IBM Plex Serif", serif;
@@ -50,9 +52,20 @@ img {
 .h4 {
     font-size: var(--h4);
 }
+.h5 {
+    font-size: var(--h5);
+}
+
+.bold {
+    font-weight: 600;
+}
 /*~~~~~~~~~~~~~~~~~
       LAYOUT  
 ~~~~~~~~~~~~~~~~~~~*/
+.bg-offWhite {
+    background: var(--bg-offwhite);
+}
+
 .btn {
     display: flex;
     font-size: 18px;
@@ -104,10 +117,12 @@ img {
     flex-direction: column;
 }
 
-
-
-
-
+.col-50 {
+    width: 50%;
+}
+.col-oneThird {
+    width: 33.33%;
+}
 
 
 

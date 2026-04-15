@@ -1,35 +1,32 @@
+import { useState } from "react";
 import { RiCloseCircleLine } from '@remixicon/react';
 import styles from './TaskModal.module.css';
-import { useState } from 'react';
 
-const TaskModal = ({closeModal, taskAdder}) => {
+const TaskModal = ({closeModalFnc, addNewTaskFnc}) => {
 
-    // Form Handling
-    const [task, setTask] = useState("");
+    const [taskTitle, setTaskTitle] = useState("");
 
-    const handleSubmit = (e) => {
+    const handleForm = (e) => {
         e.preventDefault();
 
-        taskAdder(task);
-
-        setTask("");
-        closeModal();
+        addNewTaskFnc(taskTitle);
+        setTaskTitle("");
+        closeModalFnc();
     }
-    
 
   return (
     <div className={styles.modal}>
         <div className={styles["modal-content"]}>
             <h2 className="h2 text-center">Add New Task</h2>
-            <form className={styles["task-form"]} onSubmit={handleSubmit}>
+            <form className={styles["task-form"]} onSubmit={handleForm}>
                 <div className={styles.field}>
-                    <input type="text" value={task} onChange={(e) => {setTask(e.target.value)}} placeholder="Enter Your Task Here..." />
+                    <input type="text" value={taskTitle} onChange={e => setTaskTitle(e.target.value)} placeholder="Enter Your Task Here..." />
                 </div>
                 <div className={styles.field}>
                     <button type="submit">Add Task</button>
                 </div>
             </form>
-            <span onClick={closeModal} className={styles.closeModal}><RiCloseCircleLine size={30} /></span>
+            <span onClick={closeModalFnc} className={styles.closeModal}><RiCloseCircleLine size={40} /></span>
         </div>
     </div>
   )

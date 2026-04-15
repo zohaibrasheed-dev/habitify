@@ -1,21 +1,32 @@
 
-const Tasks = () => {
-  return (
-    <div className="tasks-wrapper">
-        <h2 className="h4">All Tasks</h2>
-        <div className="tasks-listing">
-            <div className="single-task">
-                <span>Read Book</span>
+import styles from './Tasks.module.css';
+
+const Tasks = ({tasksData}) => {
+    
+    return (
+        <div className={styles["tasks-area"]}>
+            <div className={styles["tasks-header"]}>
+                <h2 className="h3 bold text-center  font-ibm">All Tasks</h2>
             </div>
-            <div className="single-task">
-                <span>Grocery Shoping</span>
-            </div>
-            <div className="single-task">
-                <span>Workout in GYM - 20 Minutes Daily</span>
+            <div className={styles["tasks-body"]}>
+
+                {
+                    tasksData.length > 0 ? (
+                        <ul>
+                            {
+                                tasksData.map((task, index) => (
+                                    <li key={index}>{task}</li>
+                                ))
+                            }
+                        </ul>
+                    ) : (
+                        <p className={`${styles.noTasks} text-center`}>You have no tasks right now!</p>
+                    )
+                }
+
             </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Tasks

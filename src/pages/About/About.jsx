@@ -1,6 +1,10 @@
 
 function About() {
     return (
-        <h2>About Us</h2>
+        <div className="contentWrapper">
+            <h2>About Page</h2>
+        </div>
     )
 }
+
+export default About
