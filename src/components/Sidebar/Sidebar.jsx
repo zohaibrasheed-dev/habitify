@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from '../../assets/icons/logo.png';
 import styles from './Sidebar.module.css';
 
@@ -9,11 +10,8 @@ const Sidebar = () => {
             </div>
             <nav>
                 <ul>
-                    <li><a href="#" className={styles.active}>Dashboard</a></li>
-                    <li><a href="#">Page 1</a></li>
-                    <li><a href="#">Page 2</a></li>
-                    <li><a href="#">Page 3</a></li>
-                    <li><a href="#">Page 4</a></li>
+                    <li><Link to="/" className={styles.active}>Dashboard</Link></li>
+                    <li><Link to="/about">About</Link></li>
                 </ul>
             </nav>
         </>

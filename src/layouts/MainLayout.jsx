@@ -1,9 +1,7 @@
 import styles from './MainLayout.module.css';
 import Sidebar from '../components/Sidebar/Sidebar';
 import Header from '../components/Header/Header';
-import Dashboard from '../pages/Dashboard/Dashboard';
-
-
+import { Outlet } from "react-router-dom";
 
 function MainLayout() {
     return (
@@ -15,7 +13,7 @@ function MainLayout() {
                 </aside>
                 <div className={styles.mainArea}>
                     <Header />
-                    <Dashboard />
+                    <Outlet />
                 </div>
             </div>
         </section>
