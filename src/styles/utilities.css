@@ -1,0 +1,74 @@
+
+/*==================
+    Generic Classes
+===================*/
+.contentWrapper {
+    padding: var(--space6);
+}
+.font-ibm {
+    font-family: "IBM Plex Serif", serif;
+}
+.accent {
+    color: var(--accent-color);
+}
+
+.btn {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    padding: var(--space4) var(--space7);
+}
+.btn svg {
+    margin-left: 7px;
+}
+.btn-primary {
+    color: #fff;
+    background: var(--accent-color);
+}
+
+/* .bg-offWhite {
+    background: var(--bg-offwhite);
+}
+
+
+ */
+/*=================
+        LAYOUT
+===================*/        
+.text-center {
+    text-align: center;
+}
+.h-full {
+    height: 100%;
+}
+.w-full {
+    width: 100%;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.jc-center {
+    justify-content: center;
+}
+.jc-end {
+    justify-content: flex-end;
+}
+.ai-center {
+    align-items: center;
+}
+.jc-sb {
+    justify-content: space-between;
+}
+.flex-dc {
+    flex-direction: column;
+}
+.col-50 {
+    width: 50%;
+}
+.col-oneThird {
+    width: 33.33%;
+}

@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Inter", sans-serif;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+input:focus {
+    outline: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~
+       Theme
+~~~~~~~~~~~~~~~~~~~*/
+/* .themeBtn {
+    width: 85px;
+    padding: 0 10px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    border: 1px solid #b3b3b3;
+    align-items: center;
+    height: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+}
+.themeBtn span svg {
+    width: 20px;
+}
+.themeBtn span {
+    height: 25px;
+    position: relative;
+    transition: 300ms ease;
+}
+.themeBtn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #f4eb38;
+    border-radius: 30px;
+    z-index: 0;
+    transition: 400ms ease;
+    transform: translateX(0);
+}
+.darkIcon,
+.dark-theme .lightIcon {
+    opacity: 0.4;
+    transition: 400ms ease;
+}
+.dark-theme .themeBtn::before {
+    transform: translateX(41px);
+    background: #666;
+}
+.dark-theme .darkIcon {
+    opacity: 1;
+    color: #fff;
+}
+.dark-theme aside {
+    background: #111828;
+} */

@@ -1,10 +1,10 @@
 :root {
 
     /*==== COLORS ====*/
-    --color-orange: #fd7c38;
-    --color-gray: #333;
-    --active-bg: #fff4ee;
-    --bg-offwhite: #f7f7f4;
+    --accent-color: #fd7c38;
+    --text-color: #333;
+    --bg-color: #f7f7f4;
+    --bg-active: #fff4ee;
 
     /*==== TEXT ====*/
     --h1: 42px;
