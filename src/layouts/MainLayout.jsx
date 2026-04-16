@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import Sidebar from '../components/Sidebar/Sidebar';
 import Header from '../components/Header/Header';
@@ -8,10 +8,22 @@ import styles from './MainLayout.module.css';
 function MainLayout() {
 
     // Managing Tasks State
-    const [tasksCollection, setTasksCollection] = useState([]);
+    const [tasksCollection, setTasksCollection] = useState(() => {
+        // Lazy Init
+        const saved = localStorage.getItem("savedTasks");
+        return saved ? JSON.parse(saved) : [];
+    });
+    
     const addNewTask = (newTask) => {
         setTasksCollection(tasksCollection => [...tasksCollection, newTask]);
     }
+
+    // Store Tasks in LocalStorage
+    useEffect(() => {
+      // The Action
+        localStorage.setItem("savedTasks", JSON.stringify(tasksCollection));
+    
+    }, [tasksCollection])
 
     // Managing Modal State
     const [modalState, setModalState] = useState(false);

@@ -11,7 +11,7 @@ const Tasks = ({tasksData}) => {
             <div className={styles["tasks-body"]}>
 
                 {
-                    tasksData.length > 0 ? (
+                    tasksData.length ? (
                         <ul>
                             {
                                 tasksData.map((task, index) => (
