@@ -1,26 +1,33 @@
 .logo {
-    padding: 22px 0;
-    border-bottom: 1px solid #eee;
+    padding: 28px 0;
     margin-bottom: var(--space5);
+    border-bottom: 1px solid var(--border-color);
 }
 .logo img {
     max-width: 160px;
 }
 nav li a {
-    display: block;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
     font-size: 16px;
-    padding: var(--space5) var(--space7);
+    font-weight: 600;
+    padding: var(--space5) var(--space8);
+}
+nav li a svg {
+    margin-right: 10px;
 }
 nav .active {
-    background: var(--active-bg);
+    background: var(--bg-active);
     position: relative;
 }
-nav .active::after {
+nav .active::before {
     content: '';
     position: absolute;
     height: 100%;
-    width: 4px;
-    right: 0;
+    width: 5px;
+    left: 0;
     top: 0;
-    background: var(--color-orange);
+    border-radius: 0 8px 8px 0;
+    background: var(--accent-color);
 }

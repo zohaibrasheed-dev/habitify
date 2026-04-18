@@ -1,13 +1,20 @@
 .tasks-area {
-    background: #fff;
-    border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 0 20px -5px rgba(0,0,0,0.4);
+    border-radius: 12px;
+    background: var(--bg-secondary);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+:global(.dark-theme) .tasks-area {
+    background: var(--bg-tertiary);
 }
 .tasks-header {
-    padding: var(--space4);
-    background: var(--color-orange);
     color: #fff;
+    padding: var(--space4);
+    background: var(--accent-color);
+}
+.tasks-header .h3 {
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 .tasks-body {
     min-height: 300px;
@@ -19,15 +26,21 @@
     flex-direction: column;
     gap: 8px;
 }
-.tasks-area ul li {
+.tasks-area li {
+    border-radius: 8px;
+    background: var(--bg-pills);
     padding: var(--space3) var(--space5);
-    background: #eee;
-    border-radius: 6px;
+    transition: 0.2s ease;
+    color: var(--text-primary);
+}
+.tasks-area li:hover {
+    background: var(--bg-active);
+    transform: translateY(-2px);
 }
 .noTasks {
     font-size: 18px;
     display: block;
-    color: #333;
+    color: var(--text-color);
     font-weight: 500;
     position: absolute;
     top: 45%;

@@ -11,7 +11,6 @@
 .accent {
     color: var(--accent-color);
 }
-
 .btn {
     display: flex;
     font-size: 18px;
@@ -28,13 +27,6 @@
     color: #fff;
     background: var(--accent-color);
 }
-
-/* .bg-offWhite {
-    background: var(--bg-offwhite);
-}
-
-
- */
 /*=================
         LAYOUT
 ===================*/        

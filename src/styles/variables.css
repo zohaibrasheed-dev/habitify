@@ -1,10 +1,22 @@
 :root {
 
-    /*==== COLORS ====*/
-    --accent-color: #fd7c38;
-    --text-color: #333;
-    --bg-color: #f7f7f4;
-    --bg-active: #fff4ee;
+    /* ==== BACKGROUNDS ==== */
+    --bg-primary: #f8fafc;       /* main background (soft white) */
+    --bg-secondary: #ffffff;     /* Contrast backgrounds */
+    --bg-tertiary: #f1f1f1;      /* Cards */
+    --bg-pills: #f1f1f1;      /* Pills */
+    --bg-active: #fff1e8;        /* hover / active */
+
+    /* ==== TEXT ==== */
+    --text-primary: #1f2937;     /* main text (dark gray) */
+    --text-secondary: #6b7280;   /* muted text */
+
+    /* ==== ACCENT ==== */
+    --accent-color: #f97316;     /* orange (slightly refined) */
+    --accent-hover: #ea580c;
+
+    /* ==== BORDER ==== */
+    --border-color: #e5e7eb;
 
     /*==== TEXT ====*/
     --h1: 42px;
@@ -23,3 +35,23 @@
     --space8: 45px;
 }
 
+body.dark-theme {
+  /* ==== BACKGROUNDS ==== */
+  --bg-primary: #0f172a;       /* deep blue-black (better than pure black) */
+  --bg-secondary: #1e293b;
+  --bg-tertiary: #1a1a1a;      /* Cards */
+  --bg-pills: #353535;      /* Pills */
+  --bg-active: #2a2f3f;
+  
+
+  /* ==== TEXT ==== */
+  --text-primary: #f1f5f9;     /* soft white */
+  --text-secondary: #94a3b8;   /* Muted Text */
+
+  /* ==== ACCENT ==== */
+  --accent-color: #fb923c;     /* softer orange for dark bg */
+  --accent-hover: #f97316;
+
+  /* ==== BORDER ==== */
+  --border-color: #334155;
+}

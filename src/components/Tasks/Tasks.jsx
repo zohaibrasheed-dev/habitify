@@ -6,7 +6,7 @@ const Tasks = ({tasksData}) => {
     return (
         <div className={styles["tasks-area"]}>
             <div className={styles["tasks-header"]}>
-                <h2 className="h3 bold text-center  font-ibm">All Tasks</h2>
+                <h2 className="h3 text-center font-ibm">All Tasks</h2>
             </div>
             <div className={styles["tasks-body"]}>
 
